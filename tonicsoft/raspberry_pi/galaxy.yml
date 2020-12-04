@@ -1,0 +1,18 @@
+namespace: tonicsoft
+name: raspberry_pi
+version: 0.0.0
+readme: README.md
+
+authors:
+- tonicsoft <tonicsoft@users.noreply.github.com>
+
+description: Reusable ansible roles for raspberry pi configuration and set up.
+
+license:
+- GPL-2.0-or-later
+
+tags: [raspberry, pi, raspberry_pi, raspberry-pi]
+
+dependencies: {}
+
+repository: https://github.com/tonicsoft/ansible-raspberry-pi
