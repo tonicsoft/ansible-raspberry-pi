@@ -1,0 +1,5 @@
+# Unfortunately apt module doesn't seem to work for this package
+- name: Install wiringpi
+  shell: apt-get install wiringpi
+  args:
+    warn: false
