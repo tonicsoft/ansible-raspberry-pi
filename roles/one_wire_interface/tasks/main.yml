@@ -1,0 +1,18 @@
+- name: Enable 1-wire interface
+  lineinfile:
+    dest: /boot/config.txt
+    regexp: "^dtoverlay=w1-gpio"
+    line: "dtoverlay=w1-gpio"
+    insertafter: EOF
+    state: present
+  register: one_wire_result
+
+- name: Reboot if needed
+  reboot:
+    msg: "Reboot initiated to enable 1 wire interface"
+    connect_timeout: 5
+    reboot_timeout: 300
+    pre_reboot_delay: 0
+    post_reboot_delay: 30
+    test_command: uptime
+  when: one_wire_result.changed
