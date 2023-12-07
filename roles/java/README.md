@@ -1,4 +1,4 @@
 Install Java
 =========
 
-Install Open JDK 11 (headless).
+Install Open JDK 17 (headless).
