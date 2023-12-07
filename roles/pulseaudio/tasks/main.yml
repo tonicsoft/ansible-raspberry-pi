@@ -1,0 +1,11 @@
+- name: Install Pulse Audio
+  apt:
+    name: pulseaudio
+
+- name: Install Pulse Audio Volume Control
+  apt:
+    name: pavucontrol
+
+- name: Install Pulse Audio Preferences
+  apt:
+    name: paprefs

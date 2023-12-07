@@ -1,4 +1,2 @@
-Install Java
+Install VLC Media Player
 =========
-
-Install Open JDK 17 (headless).
